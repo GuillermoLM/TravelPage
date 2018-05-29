@@ -24,7 +24,7 @@ gulp.task("scripts",()=>{
     .pipe(gulp.dest("dist/script"));
 })
 
-gulp.watch("./js/**/*.js").on("change",()=>{
+gulp.watch("public/javascripts/**/*.js").on("change",()=>{
     return gulp.src("public/javascripts/**/*.js")
     .pipe(concat("script.js"))
     .pipe(gulp.dest("dist/script"))
@@ -42,7 +42,7 @@ gulp.task("styles",()=>{
     .pipe(gulp.dest("dist/css"));
 })
 
-gulp.watch("./css/**/*.css").on("change",()=>{
+gulp.watch("public/stylesheets/**/*.css").on("change",()=>{
     return gulp.src("public/stylesheets/**/*.css")
     .pipe(concat("style.css"))
     .pipe(gulp.dest("dist/css"))
