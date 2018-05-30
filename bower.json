@@ -1,0 +1,17 @@
+{
+  "name": "p-ginaviaje",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Guillermo <you@example.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/GuillermoLM/TravelPage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
