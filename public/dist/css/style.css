@@ -156,6 +156,11 @@ nav{
   font-size: 15px;
 }
 
+#btnD{
+  background-color: darkblue;
+  color:yellow;
+}
+
 .textDB{
   padding-bottom: 15px;
 }
@@ -198,6 +203,9 @@ nav{
   font-size: 12px;
   border-top: solid black;
   padding: 15px;
+  clear: both;
+  position: relative;
+  margin-top: 7em;
 }
 
 
