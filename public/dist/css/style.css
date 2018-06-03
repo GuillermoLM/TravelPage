@@ -169,11 +169,12 @@ nav{
   font-size: 10px;
   padding-bottom: 20px;
 }
-
+.first-row{
+  margin-bottom: 100px;
+}
 .footerBox{
   background: darkblue;
   min-height: 400px;
-  max-height: 300px;
   margin-top: 50px;
   width: 100%;
 }
@@ -203,9 +204,10 @@ nav{
   font-size: 12px;
   border-top: solid black;
   padding: 15px;
-  clear: both;
+  height: 50px;
+  /* clear: both;
   position: relative;
-  margin-top: 7em;
+  margin-top: 7em; */
 }
 
 
