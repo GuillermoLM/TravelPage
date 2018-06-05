@@ -10,6 +10,10 @@ h2 {
   color: white;
 }
 
+h3 {
+  color: white;
+}
+
 nav a{
   color:white;
 }
@@ -33,27 +37,35 @@ nav{
 
 #iconFB{
   margin-top: 15px;
-  margin-left: 125px;
+  width: 35px;
+  height: 35px;
 }
 #iconTW{
   margin-top: 15px;
-  margin-left: 100px;
+  width: 35px;
+  height: 35px;
 }
 #iconWS{
   margin-top: 15px;
-  margin-left: 75px;
+  width: 35px;
+  height: 35px;
 }
 #iconIN{
   margin-top: 15px;
-  margin-left: 50px;
+  width: 35px;
+  height: 35px;
 }
 #iconLN{
   margin-top: 15px;
-  margin-left: 25px;
+  width: 35px;
+  height: 35px;
 }
 #iconYO{
   margin-top: 15px;
+  width: 35px;
+  height: 35px;
 }
+
 #puente{
   margin-top: 25px;
 }
@@ -65,7 +77,6 @@ nav{
 .card-deck{
   margin-left: 200px;
   margin-right: 200px;
-  margin-bottom: 50px;
   margin-top: 50px;
 }
 
@@ -121,6 +132,7 @@ nav{
   min-height: 500px;
   background-size: cover;
   width: 100%;
+  margin-top:50px;
 }
 
 .quienesSomos{
@@ -205,11 +217,74 @@ nav{
   border-top: solid black;
   padding: 15px;
   height: 50px;
-  /* clear: both;
-  position: relative;
-  margin-top: 7em; */
 }
 
+#carouselExampleControls{
+  width: 800px;
+  height: 40vw;
+  margin: 60px;
+}
 
+.imgCar {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+}
 
+.header-text {
+  position: absolute;
+  top: 20%;
+  left: 1.8%;
+  right: auto;
+  width: 96.66666666666666%;
+  color: #fff;
+}
 
+#textIdBlueCa{
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  background-color: darkblue;
+  min-height: 80px;
+  min-width: 600px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.textBlueCa{
+  margin: 20px;
+}
+
+#textIdYellowCa{
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  background-color: yellow;
+  min-height: 100px;
+  min-width: 250px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.textYellowCa{
+  margin: 30px;
+  color: darkblue;
+}
+
+.QSBox{
+  background: #5DBCD2;
+  margin-top: 50px;
+  min-height: 480px;
+}
+
+.footerBoxRe{
+  background: darkblue;
+  min-height: 200px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.logosFoot{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
