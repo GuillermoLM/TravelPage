@@ -312,6 +312,12 @@ nav{
   min-height: 500px;
 }
 
+.loginBox{
+  background-color: rgba(234,229,229,0.5);
+  min-width: 300px;
+  min-height: 300px;
+}
+
 .form-control{
   border: solid black;
 }
@@ -322,4 +328,8 @@ nav{
 
 #titR{
   color:black;
+}
+
+.loginEnlace{
+  color: black;
 }
