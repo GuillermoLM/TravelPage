@@ -187,7 +187,6 @@ nav{
 .footerBox{
   background: darkblue;
   min-height: 400px;
-  margin-top: 50px;
   width: 100%;
 }
 
@@ -296,4 +295,31 @@ nav{
 .icon{
   height: 20px;
   margin-top: 0px;
+}
+
+.img-Register{
+  background: url("/images/travel_2.jpg") no-repeat center top;
+  background-position: center center;
+  text-align: center;
+  min-height: 600px;
+  width: auto;
+  background-size: cover;
+}
+
+.register{
+  background-color: rgba(234,229,229,0.5);
+  min-width: 600px;
+  min-height: 500px;
+}
+
+.form-control{
+  border: solid black;
+}
+
+.rInput{
+  margin: 5px 0;
+}
+
+#titR{
+  color:black;
 }
