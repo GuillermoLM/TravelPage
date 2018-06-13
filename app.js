@@ -5,9 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs = require("hbs");
 var hbsUtils = require("hbs-utils")(hbs);
+var ExpressSessions = require("express-session");
+var flash = require("connect-flash");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginFlash = require("./routes/login_flash");
+var integration = require("./routes/integration");
 
 var app = express();
 
@@ -19,6 +23,14 @@ hbsUtils.registerWatchedPartials(`${__dirname}/views/partials`);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(ExpressSessions({
+  secret:"GeekhubsAcademy",
+  name: "SesionGeek",
+  resave: true,
+  saveUninitialize: true
+}));
+
+app.use(flash());
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -29,6 +41,8 @@ app.use("/components",express.static(`${__dirname}/public/components`));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use("/login-flash", loginFlash);
+app.use("/integration", integration);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
