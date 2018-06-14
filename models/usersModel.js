@@ -10,22 +10,34 @@ class Viajes {
             else return cb(rows);
         })
     }
+    
     findUser(nombre, cb)
     {
         if(!Conn) return cb("No se ha podido crear la conexión");
-        const SQL = "SELECT * FROM usuarios WHERE nombre LIKE '%" + nombre +"%';";
+        const SQL = "SELECT * FROM usuarios WHERE usuario LIKE '%" + nombre +"%';";
         Conn.query(SQL, (error, rows)=>{
             if(error) return cb(error);
             else return cb(rows);
         })
     }
-    fetchAll(cb){
+    fetchAll(cb)
+    {
         if(!Conn) return cb("No se ha creado la conexión");
         const SQL = "SELECT * FROM usuarios LIMIT 10;";
         Conn.query(SQL,(error,rows)=>{
             if(error) return cb(error);
             return cb(rows);
         });
+    }
+
+    insertUser(nombreUser, emailUser, passwordUser, cb)
+    {
+        if(!Conn) return cb("No se ha podido crear la conexión");
+        const SQL = `INSERT INTO usuarios (usuario, email, password) VALUES ('${nombreUser}','${emailUser}','${passwordUser}');`;
+        Conn.query(SQL, (error, rows)=>{
+            if(error) return cb(error);
+            else return cb(rows);
+        })
     }
 }
 

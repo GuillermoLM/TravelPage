@@ -13,18 +13,19 @@ class loginController extends Controller {
         let username = this.req.body.user;
         let pass = this.req.body.passW;
         let userModel = new UserModel();
-        userModel.findUser(username, (info)=>{
-            
-            if(info.length === 0 )
+        userModel.findUser(username, (info)=>
+        {    
+            if(info.length === 0)
             {
                 this.req.flash("info","El usuario no existe");
                 this.index();
             }
             else
             {
-                if(pass == info[0].contraseña)
+                if(pass == info[0].password)
                 {
-                    this.index();
+                    // this.index();
+                    this.res.render('perfil',{layout:'layout',user:username});
                 }
                 else
                 {
@@ -36,16 +37,6 @@ class loginController extends Controller {
     }
 
     index() {
-        // let userModel = new UserModel();
-        // userModel.fetchAll((data) => {
-        //     console.log(data);
-        // });
-
-        // this.res.render('login', {
-        //     title: 'Login',
-        //     layout: 'layout'
-        // })
-
         let info = this.req.flash("info");
         if(info=="")
         {

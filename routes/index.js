@@ -16,6 +16,11 @@ router.get('/register', (req, res, next) => {
   registerController.index();
 })
 
+router.post('/register',(req, res, next)=>{
+  let registerController = new RegisterController(req, res, next);
+  registerController.register();
+})
+
 router.get('/login', (req, res, next) => {
   let loginController = new LoginController(req, res, next);
   loginController.index();
@@ -25,4 +30,5 @@ router.post('/login',(req, res, next)=>{
   let loginController = new LoginController(req, res, next);
   loginController.login();
 })
+
 module.exports = router;

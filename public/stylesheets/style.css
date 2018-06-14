@@ -333,3 +333,16 @@ nav{
 .loginEnlace{
   color: black;
 }
+
+.loginBoxMessage{
+  margin: 5px;
+}
+
+.errorM{
+  color:black;
+}
+
+.adviceR{
+  font: 7px;
+  color:black;
+}

@@ -11,13 +11,20 @@
                         <div class="form-row">
                             <input type="password" class="form-control rInput" name="passW" placeholder="Contraseña">
                         </div>
-                    
-                    <br>
-                    <div class="form-check">
-                        <button type="submit" class="btn-lg btn-warning">Enviar</button>
-                    </div>
-                    <br>
-                    <a href="#" class="loginEnlace">¿No recuerdas tu contraseña?</a>
+                        {{#if info}}
+                        <div>
+                            <p> </p>
+                            <div class="alert alert-success alert-dismissible">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>ERROR</strong> {{info}}
+                            </div>
+                        </div>
+                        {{/if}}
+                        <div class="form-check">
+                            <button type="submit" class="btn-lg btn-warning">Enviar</button>
+                        </div>
+                        <br>
+                        <a href="#" class="loginEnlace">¿No recuerdas tu contraseña?</a>
                     </form>
                 </div>
             </div>

@@ -5,27 +5,44 @@
                 <div class="offset-2 col-8 ">
                     <h3 id="titR">REGISTRO</h3>
                     <h6>¿Ya estás registrado?</h6>
-                    <form>
+                    <form class="needs-validation" method="post" novalidate>
                         <div class="form-row">
-                            <input type="text" class="form-control rInput" placeholder="Usuario">
+                            <input type="text" class="form-control rInput" name="user" placeholder="Usuario" required>
+                            <div class="invalid-feedback adviceR">
+                                Por favor, introduce un usuario
+                            </div>
                         </div>
                         <div class="form-row">
-                            <input type="email" class="form-control rInput" placeholder="Email">
+                            <input type="email" class="form-control rInput" name="mail" placeholder="Email" required>
+                            <div class="invalid-feedback adviceR">
+                                Por favor, introduce un correo eléctronico
+                            </div>
                         </div>
                         <div class="form-row">
-                            <input type="password" class="form-control rInput" placeholder="Contraseña">
+                            <input type="password" id="password" class="form-control rInput" name="passW" placeholder="Contraseña" required>
+                            <div class="invalid-feedback adviceR">
+                                Por favor, introduce una contraseña
+                            </div>
                         </div>
                         <div class="form-row">
-                            <input type="password" class="form-control rInput" placeholder="Repite la contraseña">
+                            <input type="password" id="confirmPassword" class="form-control rInput" name="repeatPassW" placeholder="Repite la contraseña" required>
+                            <div class="invalid-feedback adviceR" id="advicePassDiferent">
+                                Por favor, escribe la misma contraseña
+                            </div>
+
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkRegister" required>
+                            <label class="form-check-label" for="checkregister">
+                                Acepto los terminos y condiciones, asi como la politica de privacidad.
+                            </label>
+                            <div class="invalid-feedback adviceR">
+                                Debes aceptar los términos antes de registrarte
+                            </div>
+                            <button type="submit" class="btn-lg btn-warning">Enviar</button>
                         </div>
                     </form>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="checkRegister">
-                        <label class="form-check-label" for="checkregister">
-                            Acepto los terminos y condiciones, asi como la politica de privacidad.
-                        </label>
-                        <button type="submit" class="btn-lg btn-warning">Enviar</button>
-                    </div>
                 </div>
             </div>
         </div>

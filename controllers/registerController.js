@@ -8,18 +8,30 @@ class registerController extends Controller
        super(req, res ,next)
    }
 
-   index()
-   {
-      let userModel = new UserModel();
-      userModel.fetchAll((data)=>{
-       console.log(data);
-      });
+    register()
+    {        
+        let username = this.req.body.user;
+        let email = this.req.body.mail;
+        let pass = this.req.body.passW;
+        let userModel = new UserModel();
+        
+        userModel.insertUser(username, email, pass, (info)=>
+        {
+            if(info.length === 1)
+            {                
+                this.req.flash("info","El usuario ya existe");
+            }
+            else
+            {
+               this.res.redirect('/login');
+            }
+        })
+    }
 
-       this.res.render('register', {
-           title: 'Register',
-           layout: 'layout'
-       })
-   }
+    index()
+    {
+        this.res.render('register', {title: 'Register',layout: 'layout'})
+    }
 }
 
 module.exports = registerController;
