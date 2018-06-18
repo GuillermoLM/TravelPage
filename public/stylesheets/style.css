@@ -14,19 +14,19 @@ h3 {
   color: white;
 }
 
-nav a{
-  color:white;
+nav a {
+  color: white;
 }
 
-nav a:hover{
-  color:black;
+nav a:hover {
+  color: black;
 }
 
-nav{
+nav {
   padding-top: 10px;
 }
 
-.image{
+.image {
   background: url("/images/top.jpg") no-repeat center top;
   background-position: center center;
   text-align: center;
@@ -35,46 +35,51 @@ nav{
   background-size: cover;
 }
 
-#iconFB{
-  margin-top: 15px;
-  width: 35px;
-  height: 35px;
-}
-#iconTW{
-  margin-top: 15px;
-  width: 35px;
-  height: 35px;
-}
-#iconWS{
-  margin-top: 15px;
-  width: 35px;
-  height: 35px;
-}
-#iconIN{
-  margin-top: 15px;
-  width: 35px;
-  height: 35px;
-}
-#iconLN{
-  margin-top: 15px;
-  width: 35px;
-  height: 35px;
-}
-#iconYO{
+#iconFB {
   margin-top: 15px;
   width: 35px;
   height: 35px;
 }
 
-#puente{
+#iconTW {
+  margin-top: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+#iconWS {
+  margin-top: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+#iconIN {
+  margin-top: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+#iconLN {
+  margin-top: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+#iconYO {
+  margin-top: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+#puente {
   margin-top: 25px;
 }
 
-.wrapperBtn{
+.wrapperBtn {
   padding: 50px;
 }
 
-.card-deck{
+.card-deck {
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 50px;
@@ -86,17 +91,16 @@ nav{
   object-fit: cover;
 }
 
-.card{
+.card {
   border: none;
 }
 
-.card-img-overlay{
-  padding: 0px!important;
+.card-img-overlay {
+  padding: 0px !important;
   box-shadow: 7px 7px 10px grey;
 }
 
-
-#textIdBlue{
+#textIdBlue {
   position: absolute;
   color: white;
   font-size: 24px;
@@ -106,11 +110,11 @@ nav{
   font-size: 18px;
 }
 
-.textBlue{
+.textBlue {
   margin: 20px;
 }
 
-#textIdYellow{
+#textIdYellow {
   position: absolute;
   color: white;
   font-size: 24px;
@@ -120,37 +124,37 @@ nav{
   font-size: 18px;
 }
 
-.textYellow{
+.textYellow {
   margin: 30px;
   color: darkblue;
 }
 
-.imageWho{
+.imageWho {
   background: url("/images/travel_1.jpg") no-repeat center top;
   background-position: center center;
   text-align: center;
   min-height: 500px;
   background-size: cover;
   width: 100%;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
-.quienesSomos{
-  top:50px;
+.quienesSomos {
+  top: 50px;
 }
 
-.textQS{
+.textQS {
   text-align: justify;
   text-justify: inter-word;
 }
 
-.titleQS{
+.titleQS {
   font-size: 30px;
   text-align: left;
   text-decoration: underline yellow;
 }
 
-.map{
+.map {
   background: #f7f7f7;
   min-height: 500px;
   max-height: 500px;
@@ -158,67 +162,69 @@ nav{
   width: 100%;
 }
 
-#mapGoogle{
+#mapGoogle {
   padding: 25px;
 }
 
-.textDescrip{
+.textDescrip {
   padding: 25px;
   text-align: justify;
   font-size: 15px;
 }
 
-#btnD{
+#btnD {
   background-color: darkblue;
-  color:yellow;
+  color: yellow;
 }
 
-.textDB{
+.textDB {
   padding-bottom: 15px;
 }
 
-.please{
+.please {
   font-size: 10px;
   padding-bottom: 20px;
 }
-.first-row{
+
+.first-row {
   margin-bottom: 100px;
 }
-.footerBox{
+
+.footerBox {
   background: darkblue;
   min-height: 400px;
   width: 100%;
 }
 
-.columText{
-  color:white;
+.columText {
+  color: white;
 }
 
-.textFoot{
+.textFoot {
   padding-top: 50px;
 }
 
-#horary{
+#horary {
   font-size: 14px;
 }
 
-.listFooter{
+.listFooter {
   padding-top: 30px;
 }
 
-.formFooter{
+.formFooter {
   padding-top: 30px;
 }
 
-.finalFoot{
-  color:white;
+.finalFoot {
+  color: white;
   font-size: 12px;
   border-top: solid black;
   padding: 15px;
   height: 50px;
 }
 
-#carouselExampleControls{
+#carouselExampleControls {
   width: 800px;
   height: 40vw;
   margin: 60px;
@@ -239,7 +245,7 @@ nav{
   color: #fff;
 }
 
-#textIdBlueCa{
+#textIdBlueCa {
   position: absolute;
   color: white;
   font-size: 24px;
@@ -250,11 +256,11 @@ nav{
   font-size: 18px;
 }
 
-.textBlueCa{
+.textBlueCa {
   margin: 20px;
 }
 
-#textIdYellowCa{
+#textIdYellowCa {
   position: absolute;
   color: white;
   font-size: 24px;
@@ -265,39 +271,39 @@ nav{
   font-size: 18px;
 }
 
-.textYellowCa{
+.textYellowCa {
   margin: 30px;
   color: darkblue;
 }
 
-.QSBox{
+.QSBox {
   background: #5DBCD2;
   margin-top: 50px;
   min-height: 480px;
 }
 
-.footerBoxRe{
+.footerBoxRe {
   background: darkblue;
   min-height: 200px;
   margin-top: 50px;
   width: 100%;
 }
 
-.logosFoot{
+.logosFoot {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   bottom: 50px;
 }
 
-.icon{
+.icon {
   height: 20px;
   margin-top: 0px;
 }
 
-.img-Register{
+.img-Register {
   background: url("/images/travel_2.jpg") no-repeat center top;
   background-position: center center;
   text-align: center;
@@ -306,43 +312,57 @@ nav{
   background-size: cover;
 }
 
-.register{
-  background-color: rgba(234,229,229,0.5);
+.register {
+  background-color: rgba(234, 229, 229, 0.5);
   min-width: 600px;
   min-height: 500px;
 }
 
-.loginBox{
-  background-color: rgba(234,229,229,0.5);
+.loginBox {
+  background-color: rgba(234, 229, 229, 0.5);
   min-width: 300px;
   min-height: 300px;
 }
 
-.form-control{
+.form-control {
   border: solid black;
 }
 
-.rInput{
+.rInput {
   margin: 5px 0;
 }
 
-#titR{
-  color:black;
-}
-
-.loginEnlace{
+#titR {
   color: black;
 }
 
-.loginBoxMessage{
+.loginEnlace {
+  color: black;
+}
+
+.loginBoxMessage {
   margin: 5px;
 }
 
-.errorM{
-  color:black;
+.errorM {
+  color: black;
 }
 
-.adviceR{
+.adviceR {
   font: 7px;
-  color:black;
+  color: black;
+}
+
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.error-actions .btn {
+  margin-right: 10px;
 }
