@@ -20,6 +20,17 @@ class Viajes {
             else return cb(rows);
         })
     }
+
+    findEmail(correo, cb)
+    {
+        if(!Conn) return cb("No se ha podido crear la conexión");
+        const SQL = "SELECT * FROM usuarios WHERE email LIKE '%" + correo +"%';";
+        Conn.query(SQL, (error, rows)=>{
+            if(error) return cb(error);
+            else return cb(rows);
+        })
+    }
+
     fetchAll(cb)
     {
         if(!Conn) return cb("No se ha creado la conexión");

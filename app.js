@@ -7,6 +7,8 @@ var hbs = require("hbs");
 var hbsUtils = require("hbs-utils")(hbs);
 var ExpressSessions = require("express-session");
 var flash = require("connect-flash");
+var Logger = require("./configuration/winston");
+var hbsEmail = require("nodemailer-express-handlebars");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

@@ -1,5 +1,6 @@
 const Controller = require('./controller');
 const UserModel = require('../models/usersModel');
+const EmailForNewPass = require("../helpers/mailHelper")
 
 class loginController extends Controller {
     constructor(req, res, next) 
@@ -24,7 +25,6 @@ class loginController extends Controller {
             {
                 if(pass == info[0].password)
                 {
-                    // this.index();
                     this.res.render('perfil',{layout:'layout',user:username});
                 }
                 else
@@ -36,7 +36,8 @@ class loginController extends Controller {
         })
     }
 
-    index() {
+    index() 
+    {
         let info = this.req.flash("info");
         if(info=="")
         {
@@ -49,6 +50,26 @@ class loginController extends Controller {
             this.res.render("login",{title: "Login", layout: "layout", info: info});
             info="";
         }
+    }
+
+    newPass()
+    {
+        let emailDestino = this.req.body.correo;
+        let userModel = new UserModel();
+        userModel.findEmail(emailDestino,(data)=>{
+            
+            if (data.length===0){
+                this.req.flash("data","El email no existe");
+                return
+            }
+
+            else
+            {
+                let emailForNewPass = new EmailForNewPass();
+                emailForNewPass.request(emailDestino);
+                this.res.redirect('/');
+            }
+        })
     }
 }
 

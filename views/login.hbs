@@ -6,7 +6,7 @@
                     <h3 id="titR">LOGIN</h3>
                     <form method="post">
                         <div class="form-row">
-                            <input type="text" class="form-control rInput" name="user" placeholder="Usuario o email">
+                            <input type="text" class="form-control rInput" name="user" placeholder="Usuario">
                         </div>
                         <div class="form-row">
                             <input type="password" class="form-control rInput" name="passW" placeholder="Contraseña">
@@ -24,7 +24,46 @@
                             <button type="submit" class="btn-lg btn-warning">Enviar</button>
                         </div>
                         <br>
-                        <a href="#" class="loginEnlace">¿No recuerdas tu contraseña?</a>
+                        <a href="#" class="loginEnlace" data-toggle="modal" data-target="#exampleModalCenter">¿No recuerdas tu contraseña?</a>
+                         </form>
+                        <!-- Modal -->
+                         <form  action="/renew" method="post">
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">¿No recuerdas tu contraseña?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Introduce un correo electrónico de contacto</label>
+                                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo electrónico" name="correo">
+                                            </div>
+                                            {{#if data}}
+                                            <div>
+                                                <p> </p>
+                                                <div class="alert alert-success alert-dismissible">
+                                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                                    <strong>ERROR</strong> {{data}}
+                                                </div>
+                                            </div>
+                                            {{/if}}
+                                            <div>Te enviaremos a este correo un enlace para poder crearte una nueva contraseña</div>
+                                       
+                                         </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
