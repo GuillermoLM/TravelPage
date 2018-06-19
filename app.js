@@ -49,7 +49,7 @@ app.use("/integration", integration);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   res.status(404);
-  res.render('nFound');
+  res.render('nFound',{layout:"layout-small"});
 });
 
 // error handler

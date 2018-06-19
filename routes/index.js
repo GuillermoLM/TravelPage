@@ -2,11 +2,8 @@ var express = require('express');
 var router = express.Router();
 let HomeController = require('../controllers/homeController');
 let RegisterController = require('../controllers/registerController');
-let Email = require("../configuration/emailConfig");
-let Path = require("path");
 let LoginController = require('../controllers/loginController');
-let HbsEmail = require("nodemailer-express-handlebars");
-
+let NewpassController = require('../controllers/newpassController');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -40,30 +37,14 @@ router.post('/renew', (req, res, next) => {
   loginController.newPass();
 })
 
-// router.get("/email",(req,res,next)=>{
-//   Email.transporter.use("compile", HbsEmail({
-//       viewEngine: "hbs",
-//       extName: ".hbs",
-//       viewPath: Path.join(__dirname,"../views/emails")
-//   }))
-  
-//   let message = {
-//       to: 'gallo.elcau@gmail.com',
-//       subject: 'Nueva Contraseña Travel Page',
-//       template: "email",
-//       context:{
-//           text: "Te damos el enlace para crear tu nueva contraseña: ",
-//           text2: "localhost:3000/newpass"
-//       }
-//   };
-//   Email.transporter.sendMail(message, (error, info)=>{
-//   if(error) {
-//       res.status(500).send(error, message);
-//       return
-//   }
-//   Email.transporter.close();
-//       res.status(200).send('Respuesta "%s"' + info.response);
-//   });
-// })
+router.get('/newpass', function (req, res, next) {
+  let newpassController = new NewpassController(req, res, next);
+  newpassController.index();
+});
+
+router.post('/newpass', (req, res, next) => {
+  let newpassController = new NewpassController(req, res, next);
+  newpassController.newpassUser();
+})
 
 module.exports = router;

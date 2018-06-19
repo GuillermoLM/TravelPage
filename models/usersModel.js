@@ -50,6 +50,16 @@ class Viajes {
             else return cb(rows);
         })
     }
+
+    updatePass(newPasswordUser, cb)
+    {
+        if(!Conn) return cb("No se ha podido crear la conexión");
+        const SQL = `UPDATE usuarios SET password = '${newPasswordUser}' WHERE usuarios.id = 1`;
+        Conn.query(SQL, (error, rows)=>{
+            if(error) return cb(error);
+            else return cb(rows);
+        })
+    }
 }
 
 module.exports = Viajes;

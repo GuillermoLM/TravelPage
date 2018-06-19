@@ -366,3 +366,18 @@ nav {
 .error-actions .btn {
   margin-right: 10px;
 }
+
+.newPBox{
+  background-color: rgba(234, 229, 229);
+  min-width: 600px;
+  min-height: 200px;
+}
+
+.imageSmall{
+  background: url("/images/top.jpg") no-repeat center top;
+  background-position: center center;
+  text-align: center;
+  max-height: 200px;
+  width: 100%;
+  background-size: cover;
+}

@@ -42,12 +42,12 @@ class loginController extends Controller {
         if(info=="")
         {
             console.log("NO Existe info");
-            this.res.render("login",{title: "Login", layout: "layout"});
+            this.res.render("login",{title: "Login", layout: "layout-small"});
         }
         else
         {
             console.log("Existe info");
-            this.res.render("login",{title: "Login", layout: "layout", info: info});
+            this.res.render("login",{title: "Login", layout: "layout-small", info: info});
             info="";
         }
     }
