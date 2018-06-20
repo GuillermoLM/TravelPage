@@ -80,8 +80,8 @@ nav {
 }
 
 .card-deck {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 565px;
+  margin-right:565px;
   margin-top: 50px;
 }
 
@@ -381,3 +381,11 @@ nav {
   width: 100%;
   background-size: cover;
 }
+
+.adminBox{
+  min-width: 900px;
+  min-height: 400px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+

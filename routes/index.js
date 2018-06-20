@@ -4,6 +4,7 @@ let HomeController = require('../controllers/homeController');
 let RegisterController = require('../controllers/registerController');
 let LoginController = require('../controllers/loginController');
 let NewpassController = require('../controllers/newpassController');
+let AdministratorController = require('../controllers/administratorController');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -46,5 +47,10 @@ router.post('/newpass', (req, res, next) => {
   let newpassController = new NewpassController(req, res, next);
   newpassController.newpassUser();
 })
+
+router.get('/admin', function (req, res, next) {
+  let administratorController = new AdministratorController(req, res, next);
+  administratorController.index();
+});
 
 module.exports = router;

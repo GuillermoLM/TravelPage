@@ -1,4 +1,5 @@
 const Controller = require('./controller');
+const TravelsModels = require('../models/travelsModel');
 
 
 class homeController extends Controller
@@ -9,9 +10,15 @@ class homeController extends Controller
    }
    index()
    {
-       this.res.render('index', {
-           title: 'TravelPage'
-       });
+
+        let travelsModels = new TravelsModels();
+        travelsModels.showTravels(travels=>{
+            this.res.render('index', {
+                title: 'TravelPage'
+            , travels});
+        });
+       
+        
    }
 }
 
